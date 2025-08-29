@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh; /* certifica que a div fique centralizada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: aqua;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    border: 2px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    border-color: #888;
+}
+
+/* Quando o botão está selecionado */
+button.selected {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+
+.botoes-2{
+    margin-top: 20px;
+}
