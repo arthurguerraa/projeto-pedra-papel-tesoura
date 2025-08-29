@@ -1,4 +1,6 @@
 const res = document.querySelector("#res");
+const jogador = document.querySelector("#jogador");
+const computador = document.querySelector("#computador");
 const btnPedra = document.querySelector("#pedra");
 const btnPapel = document.querySelector("#papel");
 const btnTesoura = document.querySelector("#tesoura");
@@ -80,16 +82,18 @@ function getComputerChoice(){
                 computerScore++
             }
 
-            res.innerHTML = `Rodada ${rodada}: ${resultado}  
-            Você: ${humanSelection} | Computador: ${computerSelection}<br>  
-            Placar: Você ${humanScore} x ${computerScore} Computador<br><br>`
+            res.innerHTML = `Rodada ${rodada}: ${resultado}` 
+            jogador.innerHTML = `Jogador: ${humanScore}`
+            computador.innerHTML = `Computador: ${computerScore}`
             rodada++;
 
+
+
                 if(humanScore === 5){
-                    res.innerHTML += "Parabéns! Você ganhou o jogo!";
+                    res.innerHTML += "<br>Parabéns! Você ganhou o jogo!";
                     btnJogar.disabled = true;
                 }else if(computerScore === 5){
-                    res.innerHTML += "O computador ganhou o jogo!";
+                    res.innerHTML += "<br>O computador ganhou o jogo!";
                     btnJogar.disabled = true;
                 }
         });
