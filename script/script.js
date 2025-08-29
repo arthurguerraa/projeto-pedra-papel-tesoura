@@ -82,7 +82,8 @@ function getComputerChoice(){
 
             res.innerHTML = `Rodada ${rodada}: ${resultado}  
             Você: ${humanSelection} | Computador: ${computerSelection}<br>  
-            Placar: Você ${humanScore} x ${computerScore} Computador<br><br>`;
+            Placar: Você ${humanScore} x ${computerScore} Computador<br><br>`
+            rodada++;
 
                 if(humanScore === 5){
                     res.innerHTML += "Parabéns! Você ganhou o jogo!";
