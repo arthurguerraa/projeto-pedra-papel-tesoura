@@ -32,6 +32,14 @@ body{
     align-items: center;
 }
 
+.container > h1{
+    font-size: 40px;
+}
+
+.res{
+    font-weight: bold;
+}
+
 .placar{
     display: flex;
     flex-direction: row;
@@ -84,7 +92,6 @@ button.selected {
     border-color: #3e8e41;
     transform: scale(1.05);
 }
-
 
 .botoes-2{
     margin-top: 20px;
