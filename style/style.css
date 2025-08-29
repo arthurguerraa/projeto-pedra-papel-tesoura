@@ -81,18 +81,18 @@ button{
     transition: all 0.2s ease;
     background-color: var(--cor-secundaria);
     color: white;
+    transition: transform 0.2s ease;
 }
 
 button:hover {
-    border-color: #39ff14;
-;
+    transform: translateY(-5px);
 }
 
 /* Quando o botão está selecionado */
 button.selected {
     background-color: white; /* Verde */
     color: var(--cor-principal);
-    font-weight: bold;
+    font-weight: bolder;
     border-color: var(--cor-secundaria);
     transform: scale(1.05);
 }
