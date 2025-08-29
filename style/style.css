@@ -84,14 +84,16 @@ button{
 }
 
 button:hover {
-    border-color: #888;
+    border-color: #39ff14;
+;
 }
 
 /* Quando o botão está selecionado */
 button.selected {
-    background-color: #4CAF50; /* Verde */
-    color: white;
-    border-color: #3e8e41;
+    background-color: white; /* Verde */
+    color: var(--cor-principal);
+    font-weight: bold;
+    border-color: var(--cor-secundaria);
     transform: scale(1.05);
 }
 
