@@ -98,16 +98,17 @@ function getComputerChoice(){
 
 
         btnResetar.addEventListener('click', () => {
+            humanSelection = "";
+            humanScore = 0;
+            computerScore = 0;
+            rodada = 1;
             res.innerHTML = "";
             jogador.innerHTML = "";
             computador.innerHTML = "";
             btnJogar.disabled = false;
-            humanSelection = "";
-            humanScore = 0;
-            computerScore = 0;
             jogador.innerHTML = `Jogador: ${humanScore}`;
             computador.innerHTML = `Computador: ${computerScore}`
-            rodada = 1;
+            
             
             botoes.forEach(b => b.classList.remove('selected'));
         });
