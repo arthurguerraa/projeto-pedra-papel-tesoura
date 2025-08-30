@@ -64,16 +64,17 @@ body{
 
 .botoes{
     margin-top: 20px;
+    width: 500px;
+    height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 button{
     width: 100px;
     height: 100px;
-    margin-left: 40px;
     cursor: pointer;
     border: 2px solid var(--cor-secundaria);
     border-radius: 5px;
