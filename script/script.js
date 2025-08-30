@@ -87,8 +87,6 @@ function getComputerChoice(){
             computador.innerHTML = `Computador: ${computerScore}`
             rodada++;
 
-
-
                 if(humanScore === 5){
                     res.innerHTML += "<br>Parabéns! Você ganhou o jogo!";
                     btnJogar.disabled = true;
@@ -101,10 +99,14 @@ function getComputerChoice(){
 
         btnResetar.addEventListener('click', () => {
             res.innerHTML = "";
+            jogador.innerHTML = "";
+            computador.innerHTML = "";
             btnJogar.disabled = false;
             humanSelection = "";
             humanScore = 0;
             computerScore = 0;
+            jogador.innerHTML = `Jogador: ${humanScore}`;
+            computador.innerHTML = `Computador: ${computerScore}`
             rodada = 1;
             
             botoes.forEach(b => b.classList.remove('selected'));
