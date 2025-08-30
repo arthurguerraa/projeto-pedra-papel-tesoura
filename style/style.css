@@ -110,3 +110,10 @@ button.selected {
     height: 50px;
 
 }
+
+
+@media (max-width: 625px) {
+  .container > h1 {
+    font-size: 26px; /* menor em telas pequenas */
+  }
+}
