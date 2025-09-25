@@ -45,27 +45,27 @@ function getComputerChoice(){
             }
         }
 
-            btnPedra.addEventListener('click', () => {
-                humanSelection = "pedra";
-            });
-            btnPapel.addEventListener('click', () =>{
-                humanSelection = "papel";
-            });
-            btnTesoura.addEventListener('click', () => {
-                humanSelection = "tesoura";
-            });
+        btnPedra.addEventListener('click', () => {
+            humanSelection = "pedra";
+        });
+        btnPapel.addEventListener('click', () =>{
+            humanSelection = "papel";
+        });
+        btnTesoura.addEventListener('click', () => {
+            humanSelection = "tesoura";
+        });
 
-            const botoes = [btnPedra, btnPapel, btnTesoura];
+        const botoes = [btnPedra, btnPapel, btnTesoura];
 
-            botoes.forEach(botao => {
-                botao.addEventListener('click', () => {
-                    // Remove a seleção de todos os botões
-                    botoes.forEach(b => b.classList.remove('selected'));
+        botoes.forEach(botao => {
+            botao.addEventListener('click', () => {
+                // Remove a seleção de todos os botões
+                botoes.forEach(b => b.classList.remove('selected'));
 
-                    // Adiciona a seleção apenas no botão clicado
-                    botao.classList.add('selected');
-                });
+                // Adiciona a seleção apenas no botão clicado
+                botao.classList.add('selected');
             });
+        });
 
         btnJogar.addEventListener('click', () => {
             if(humanSelection === ""){
