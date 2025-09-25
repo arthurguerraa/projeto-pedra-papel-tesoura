@@ -45,7 +45,7 @@ function getComputerChoice(){
             }
         }
 
-         btnPedra.addEventListener('click', () => {
+            btnPedra.addEventListener('click', () => {
                 humanSelection = "pedra";
             });
             btnPapel.addEventListener('click', () =>{
